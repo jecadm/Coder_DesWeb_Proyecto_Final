@@ -5,11 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- SEO -->
-   <title>PreEntrega2Costa-ETNIAS</title>
-   <meta name="description" content="Un lugar para hacer confortable tu espacio y tu vida">
-   <meta name="keywords" content="Velas , aromas, decoracion, hogar, casa, home">
-   <!-- Boostrap5 -->
+  <!-- SEO -->
+  <meta name="description" content="Un lugar para hacer confortable tu espacio y tu vida">
+  <meta name="keywords" content="Velas , aromas, decoracion, hogar, casa, home">
+  <!-- Boostrap5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <!-- AOS para animaciones -->
@@ -30,7 +29,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
 
-  
+  <title>ETNIAS & HOME</title>
 
   <link rel="stylesheet" href="./sass/main.css">
 </head>
@@ -44,11 +43,11 @@
           <section class="">
             <a class="navbar-brand col-xl col-md " href="#">
               <img src="./img/LOGOS/Circular fondo negro-logo maiz.png" alt="Logo" width="100" height="100"
-                class="d-inline-block align-text-top card-img-top  ">
+                class="d-inline-block align-text-top card-img-top rotateMenu ">
             </a>
           </section>
           <section class=" col-auto ">
-            <h2 class="tipografiaT "><strong>ETNIAS</strong> </h2>
+            <h2 class="tipografiaT "><strong>ETNIAS</strong> </h2>            
           </section>
 
           <!-- seccion derecha  - login y carrito -->
@@ -93,7 +92,7 @@
           aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand  fs-4" href="./index.html">HOME</a>
+        <a class="navbar-brand active fs-4 rotateScale " href="./index.html">HOME</a>
         <section class="collapse navbar-collapse " id="navbarTogglerDemo03">
           <ul class="navbar-nav me-auto sm-1 sm-lg-0">
             <li class="nav-item ">
@@ -116,9 +115,9 @@
               <a class="nav-link fs-5 rotateScale" href="#Contacto">Info</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          <form class="d-flex " role="search">
+            <input class=" form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success textC1" type="submit">Buscar</button>
           </form>
         </section>
       </section>
@@ -135,78 +134,63 @@
     </article>
   </section>
   <!-- Separador -->
-  <!-- CONTACTO-->
+  <!-- Imagen de section carrusel flayer-->
   <section data-aos="fade-up" class="container">
-    <section class=" container formconsulta centrar ">
-      <section>
-        <h2 id="contacto tipografiaT">CONTACTO</h2>
+
+    <section id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+      <section class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1">
+        </button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
+        </button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
+        </button>
       </section>
-      <section>
-        <form action="https://formspree.io/f/mwkyeeao" method="post" class="">
-          <section class="formconsulta center">
-            <section class="form-row ">
-              <section class="col-sl-10 mb-3  ">
-                <label for="idNombre">NOMBRE</label>
-                <section>
-                  <input name="Nombre" type="text" class="form-control is-valid centrar" id="idNombre" value=""
-                    required="" placeholder="Ingrese aquí su nombre">
-                </section>
-                <section class="valid-feedback"> </section>
-                <section class="col-sl-4 mb-3 ">
-                  <label for="idCorreo">CORREO</label>
-                  <section class="input-group">
-                    <section class="input-group-prepend">
-                      <span class="input-group-text" id="idCorreo">@</span>
-                    </section>
-                    <input name="Email" type="email" class="form-control is-valid centrar" id="idCorreo" value=""
-                      required="" placeholder="Ingrese aquí su correo">
-                    <section class="valid-feedback">
-                    </section>
-                  </section>
-                </section>
-                <section class="col-sl-4 mb-3 ">
-                  <label for="idTelefono">TELEFONO</label>
-                  <input name="tnumber" type="number" class="form-control is-valid centrar" id="idTelefono" required=""
-                    value="" placeholder="+549-341-456554">
-                  <section class="valid-feedback">
-                  </section>
-                </section>
-                <section>
-                  <section class="col-sl-4 mb-3 ">
-                    <label for="exampleFormControlTextarea1"> Consulta</label>
-                    <input name="TxConsulta" type="textarea" class="form-control" id="exampleFormControlTextarea1"
-                      rows="3">
-                  </section>
-                </section>
-                <section class="col-sl-4 mb-3 ">
-                  <section class="form-check">
-                    <input name="check" class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
-                      required="">
-                    <label class="form-check-label" for="invalidCheck3">
-                      <p>Acepto enviar mi información para que me contacten</p>
-                    </label>
-                    <section class="invalid-feedback">
-                      <p> Debes estar de acuerdo antes de enviar. </p>
-                    </section>
-                  </section>
-                </section>
-                <section>
-                  <button class="btn btn-primary textC1 btn-dark " type="submit">Enviar</button>
-                </section>
-              </section>
-            </section>
-        </form>
+      <section class="carousel-inner">
+        <section class="carousel-item active">
+          <img src="./img/IMG_20210310_160259-01.jpg" class="d-block w-100 " alt="img1">
+          <section class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </section>
+        </section>
+        <section class="carousel-item">
+          <img src="./img/IMG_20210310_160259-00.jpg" class="d-block w-100" alt="img0">
+          <section class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </section>
+        </section>
+        <section class="carousel-item">
+          <img src="./img/IMG_20210310_160259-02.jpg" class="d-block w-100" alt="img2">
+          <section class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </section>
+        </section>
       </section>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </section>
+
   </section>
-  <!-- CONTACTO-->
+  <!-- Imagen de section carrusel flayer-->
   <!-- Separador entre carrusel y tarj -->
   <section data-aos="flip-up" class="mt-2">
 
     <section class="card text-center">
       <article class="card-header  ">
-        <h1 class="txh1">Un lugar para hacer confortable tu espacio y tu vida. </h1>
-           </article>
+       <h1 class="txh1">Un lugar para hacer confortable tu espacio y tu vida. </h1>
+      </article>
       <section class="card-body fondoG">
         <h5 class="card-title">Special title treatment</h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -315,7 +299,7 @@
           <!-- pago 1 -->
           <section class="col " data-aos="fade-right" data-aos-offset="100" data-aos-duration="900"
             data-aos-easing="ease-in-sine">
-            <article class="p-3 border border border-secondary bg-gradient border-2 "> <a>
+            <article class="rotatePago p-3 border border border-secondary bg-gradient border-2 "> <a>
                 <img cla src="./img/LOGOS/Logo-sin-nombre.png" alt="Logo" width="30" height="24"
                   class="d-inline-block align-text-top ">
               </a>
@@ -324,7 +308,7 @@
           <!-- Pago 2 -->
           <section class="col tarjeta-aos" data-aos="flip-up" data-aos-offset="100" data-aos-duration="1600"
             data-aos-easing="ease-in-sine">
-            <article class="p-3 border border border-secondary bg-gradient border-2 ">
+            <article class="rotatePago  p-3 border border border-secondary bg-gradient border-2 ">
               <a>
                 <img src="./img/LOGOS/Logo-sin-nombre.png" alt="Logo" width="30" height="24"
                   class="d-inline-block align-text-top">
@@ -334,7 +318,7 @@
           <!-- Pago 3 -->
           <section class="col" data-aos="flip-up" data-aos-offset="100" data-aos-duration="1300"
             data-aos-easing="ease-in-sine">
-            <article class="p-3 border border border-secondary bg-gradient border-2 "><a>
+            <article class="rotatePago p-3 border border border-secondary bg-gradient border-2 "><a>
                 <img src="./img/LOGOS/Logo-sin-nombre.png" alt="Logo" width="30" height="24"
                   class="d-inline-block align-text-top">
               </a></article>
@@ -342,7 +326,7 @@
           <!-- Pago 4 -->
           <section class="col" data-aos="flip-up" data-aos-offset="100" data-aos-duration="1000"
             data-aos-easing="ease-in-sine">
-            <article class="p-3 border border border-secondary bg-gradient border-2 "><a>
+            <article class="rotatePago p-3 border border border-secondary bg-gradient border-2 "><a>
                 <img src="./img/LOGOS/Logo-sin-nombre.png" alt="Logo" width="30" height="24"
                   class="d-inline-block align-text-top">
               </a></article>
@@ -350,7 +334,7 @@
           <!-- Pago 5 -->
           <section class="col" data-aos="flip-up" data-aos-offset="100" data-aos-duration="900"
             data-aos-easing="ease-in-sine">
-            <article class="p-3 border border border-secondary bg-gradient border-2 "><a>
+            <article class="rotatePago p-3 border border border-secondary bg-gradient border-2 "><a>
                 <img src="./img/LOGOS/Logo-sin-nombre.png" alt="Logo" width="30" height="24"
                   class="d-inline-block align-text-top">
               </a></article>
@@ -387,37 +371,37 @@
           <!-- Grid columna -->
           <section class="col-md-6 mt-md-0 mt-3">
 
-          <!-- informacion -->
-          <h5 class="text-uppercase">INFORMACIÓN Y CONTACTO</h5>
-          <p>Cualquier información que no encuentres en los links no dudes en contactanos</p>
-        </section> <!-- Grid columna -->
-        <hr class="clearfix w-100 d-md-none pb-3">
-        <!-- Grid columna -->
-        <section class="col-md-3 mb-md-0 mb-3">
-          <!-- Links -->
-          <h5 class="text-uppercase">Información</h5>
-          <ul class="list-unstyled">
-            <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Producción </div></a></li>
-            <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Dónde comprar</a> </li>
-            <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Calidad</a> </li>
-            <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Medio ambiente</a> </li>
-          </ul>
-        </section> <!-- Grid columna -->
-        <!-- Grid columna 2 -->
-        <section class="col-md-3 mb-md-0 mb-3">
-          <!-- Links -->
-          <h5 class="text-uppercase">Contacto</h5>
-          <ul class="list-unstyled">
-            <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="./contactoDesdeLaWeb.html">Contacto
-                desde la web</a> </li>
-            <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Ubicación</a> </li>
-            <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Socios</a> </li>
-            <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">341-5403540</a></li>
-            <li></li>
-          </ul>
+            <!-- informacion -->
+            <h5 class="text-uppercase">INFORMACIÓN Y CONTACTO</h5>
+            <p>Cualquier información que no encuentres en los links no dudes en contactanos</p>
+          </section> <!-- Grid columna -->
+          <hr class="clearfix w-100 d-md-none pb-3">
+          <!-- Grid columna -->
+          <section class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Información</h5>
+            <ul class="list-unstyled">
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Producción </div></a></li>
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Dónde comprar</a> </li>
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Calidad</a> </li>
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Medio ambiente</a> </li>
+            </ul>
+          </section> <!-- Grid columna -->
+          <!-- Grid columna 2 -->
+          <section class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Contacto</h5>
+            <ul class="list-unstyled">
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="./contactoDesdeLaWeb.html">Contacto
+                  desde la web</a> </li>
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Ubicación</a> </li>
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Socios</a> </li>
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">341-5403540</a></li>
+              <li></li>
+            </ul>
 
-        </section>
-        <!-- Grid column 2-->
+          </section>
+          <!-- Grid column 2-->
 
         </section>
         <!-- Grid row -->
@@ -426,9 +410,9 @@
       <!-- Footer Links -->
 
       <!-- Copyright -->
-      <section class="footer-copyright text-center py-3">© 2022 Copyright:
-        <a href="/"> <span>Jeronimo Costa</span>- Desarrollador web </a>
-      </section>
+      <div class="footer-copyright text-center py-3">© 2022 Copyright:
+        <a href="#"> <span>Jeronimo Costa</span>- Desarrollador web </a>
+      </div>
       <!-- Copyright -->
 
     </footer>
