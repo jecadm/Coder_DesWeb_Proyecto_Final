@@ -89,20 +89,20 @@ a {
 /* Transicion del menu con hover */
 .transMenu {
   transition: width 1s;
-  width: 300px;
+  width: 100px;
   background: lightslategray transparent 50%;
 }
 
 /* animacion rotar  del logo*/
 .rotateMenu:hover {
-  transform: rotate(45deg);
+  transform: rotate(35deg);
   cursor: pointer;
   transition: all 1s;
 }
 
 /* animacion para el menu */
 .rotateScale:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   cursor: pointer;
   transition: all 1s;
 }/*# sourceMappingURL=main.css.map */

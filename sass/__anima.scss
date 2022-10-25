@@ -7,27 +7,27 @@
 .transMenu {
 
     transition: width 1s;
-    width: 300px;
+    width: 100px;
     background: lightslategray transparent 50%;
 }
 
 /* animacion rotar  del logo*/
 .rotateMenu:hover {
-    transform: rotate(45deg) ;
+    transform: rotate(35deg) ;
     cursor: pointer;
     transition: all 1s;
     color: $textC1;}
 
  /* animacion para el menu */
 .rotateScale:hover {
-    transform: scale(1.5) ;
+    transform: scale(0.5) ;
     cursor: pointer;
     transition: all 1s;
 }
 
 /* animacion rotar pago*/
 .rotatePago:hover {
-    transform: rotate(45deg) ;
+    transform: rotate(35deg) ;
     cursor: pointer;
     transition: all 1s;
 }

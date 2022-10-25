@@ -12,7 +12,7 @@
 
 
 /* Fondos  por for in */
-@each $bgg in $gbColor, $bgColor1, $bgColor2,  $bgColor3, $bgColor4{
+@each $bgg in $gbColor, $bgColor1, $bgColor2,  $bgColor3, $bgColor4, $gbColor5{
     .g-#{$bgg}{
         background-color: $bgg;
 
@@ -78,7 +78,7 @@ a {
 
 
 .fondoG {
-    background-color: $bgColor1 ;
+    background-color: $bgColor5 ;
 }
 
 .fondoG1 {
@@ -97,7 +97,6 @@ a {
 .fondoG4 {
     background-color: $gbColor;
 }
-
 
 
 /* Colores generales */
