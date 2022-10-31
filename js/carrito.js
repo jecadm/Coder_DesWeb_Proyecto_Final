@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 1,
             aos: 'fade-right',
             nombre: 'Patata',
-            precio: 1,
+            precio: 456.00,
             imagen: './img/IMG_20210310_160259-01.jpg',
             des: 'decolor rojo'
         },
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 2,
             aos: 'flip-left',
             nombre: 'Cebolla',
-            precio: 1.2,
+            precio: 76856.00,
             imagen: 'cebolla.jpg',
             des: 'decolor rojo'
         },
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 3,
             aos: 'flip-right',
             nombre: 'Calabacin',
-            precio: 2.1,
+            precio: 45188.00,
             imagen: 'calabacin.jpg',
             des: 'decolor rojo'
         },
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 4,
             aos: 'fade-left',
             nombre: 'Fresas',
-            precio: 0.6,
+            precio: 46877.52,
             imagen: 'fresas.jpg',
             des: 'decolor rojo'
         },
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 5,
             aos: 'fade-right',
             nombre: 'Calabacin',
-            precio: 2.1,
+            precio: 45158.00,
             imagen: 'calabacin.jpg',
             des: 'decolor rojo'
         },
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 6,
             aos: 'fade-right',
             nombre: 'Fresas',
-            precio: 0.6,
+            precio: 456.50,
             imagen: 'fresas.jpg',
             des: 'decolor rojo'
         }
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     let carrito = [];
-    const divisa = '€';
+    const divisa = '$ Arg';
     const DOMitems = document.querySelector('#items');
     const DOMcarrito = document.querySelector('#carrito');
     const DOMtotal = document.querySelector('#total');
