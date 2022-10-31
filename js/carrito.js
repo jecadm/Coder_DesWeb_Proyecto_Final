@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 1,
             aos: 'fade-right',
-            nombre: 'Banco Asia',
+            nombre: 'Escalera deco Vali',
             precio: 456.00,
             imagen: './img/deco/decoV1.jpg',
             des: 'decolor rojo'
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 2,
             aos: 'flip-left',
-            nombre: 'Mesa Marruecos',
+            nombre: 'Jarron Marruecos',
             precio: 76856.00,
             imagen: './img/deco/decoV2.jpg',
             des: 'decolor rojo'
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 3,
             aos: 'flip-right',
-            nombre: 'Mandalas',
+            nombre: 'Cuenco Medicci',
             precio: 45188.00,
             imagen: './img/deco/decoV3.jpg',
             des: 'decolor rojo'
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 4,
             aos: 'fade-left',
-            nombre: 'Fresas',
+            nombre: 'Mandalas',
             precio: 46877.52,
             imagen: './img/deco/decoV7.jpg',
             des: 'decolor rojo'
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 5,
             aos: 'fade-right',
-            nombre: 'Jarron Chipre',
+            nombre: 'Banqueta Indú',
             precio: 45158.00,
             imagen: './img/deco/decoV5.jpg',
             des: 'decolor rojo'
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             aos: 'fade-right',
             nombre: 'Vasija Terracota',
             precio: 456.50,
-            imagen: './img/deco/decoV6.jpg',
+            imagen: './img/deco/decoV9.jpg',
             des: 'decolor rojo'
         },
         {
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             aos: 'fade-right',
             nombre: 'Jarron Chipre',
             precio: 45158.00,
-            imagen: './img/deco/decoV10.jpg',
+            imagen: './img/deco/decoV9.jpg',
             des: 'decolor rojo'
         },
         {
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             aos: 'fade-right',
             nombre: 'Vasija Terracota',
             precio: 456.50,
-            imagen: './img/deco/decoV9.jpg',
+            imagen: './img/deco/decoV10.jpg',
             des: 'decolor rojo'
         }
 
