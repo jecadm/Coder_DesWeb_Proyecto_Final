@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 2,
             aos: 'flip-left',
-            nombre: 'Jarron Marruecos',
-            precio: 76856.00,
+            nombre: 'Jarrón Marruecos',
+            precio: 7686.00,
             imagen: './img/deco/decoV2.jpg',
             des: 'decolor rojo'
         },
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 3,
             aos: 'flip-right',
             nombre: 'Cuenco Medicci',
-            precio: 45188.00,
+            precio: 4588.00,
             imagen: './img/deco/decoV3.jpg',
             des: 'decolor rojo'
         },
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 4,
             aos: 'fade-left',
             nombre: 'Mandalas',
-            precio: 46877.52,
+            precio: 4687.52,
             imagen: './img/deco/decoV7.jpg',
             des: 'decolor rojo'
         },
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             id: 5,
             aos: 'fade-right',
             nombre: 'Banqueta Indú',
-            precio: 45158.00,
+            precio: 4558.00,
             imagen: './img/deco/decoV5.jpg',
             des: 'decolor rojo'
         },
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 7,
             aos: 'fade-right',
-            nombre: 'Jarron Chipre',
+            nombre: 'Jarrón Chipre',
             precio: 45158.00,
             imagen: './img/deco/decoV9.jpg',
             des: 'decolor rojo'

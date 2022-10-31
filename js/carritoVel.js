@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 100,
             aos: 'fade-right',
-            nombre: 'VelaBali',
+            nombre: 'Bali',
             precio: 456.00,
             imagen: './img/velas/vel1.jpeg',
             des: 'decolor rojo'
