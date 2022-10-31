@@ -86,9 +86,9 @@ document.addEventListener('DOMContentLoaded', () => {
             miNodoImagen.classList.add('img-fluid');
             miNodoImagen.setAttribute('src', info.imagen);
             //Descripcion
-            const miNodoDescript = document.createElement('p');
+          /*   const miNodoDescript = document.createElement('p');
             miNodoDescript.classList.add('card-text');
-            miNodoDescript.textContent = info.des;
+            miNodoDescript.textContent = info.des; */
             // Precio
             const miNodoPrecio = document.createElement('p');
             miNodoPrecio.classList.add('card-text');
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Insertamos
             miNodoCardBody.appendChild(miNodoImagen);
             miNodoCardBody.appendChild(miNodoTitle);
-            miNodoCardBody.appendChild(miNodoDescript);
+            /* miNodoCardBody.appendChild(miNodoDescript); */
             miNodoCardBody.appendChild(miNodoPrecio);
             miNodoCardBody.appendChild(miNodoBoton);            
             miNodo.appendChild(miNodoCardBody);
