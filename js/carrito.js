@@ -6,25 +6,25 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 1,
             aos: 'fade-right',
-            nombre: 'Patata',
+            nombre: 'Banco Asia',
             precio: 456.00,
-            imagen: './img/IMG_20210310_160259-01.jpg',
+            imagen: './img/deco/decoV1.jpg',
             des: 'decolor rojo'
         },
         {
             id: 2,
             aos: 'flip-left',
-            nombre: 'Cebolla',
+            nombre: 'Mesa Marruecos',
             precio: 76856.00,
-            imagen: 'cebolla.jpg',
+            imagen: './img/deco/decoV2.jpg',
             des: 'decolor rojo'
         },
         {
             id: 3,
             aos: 'flip-right',
-            nombre: 'Calabacin',
+            nombre: 'Mandalas',
             precio: 45188.00,
-            imagen: './img/textil/alm1.jpg.crdownload',
+            imagen: './img/deco/decoV3.jpg',
             des: 'decolor rojo'
         },
         {
@@ -32,25 +32,42 @@ document.addEventListener('DOMContentLoaded', () => {
             aos: 'fade-left',
             nombre: 'Fresas',
             precio: 46877.52,
-            imagen: './img/IMG_20210310_160259-01.jpg',
+            imagen: './img/deco/decoV7.jpg',
             des: 'decolor rojo'
         },
         {
             id: 5,
             aos: 'fade-right',
-            nombre: 'Calabacin',
+            nombre: 'Jarron Chipre',
             precio: 45158.00,
-            imagen: './img/IMG_20210310_160259-02.jpg',
+            imagen: './img/deco/decoV5.jpg',
             des: 'decolor rojo'
         },
         {
             id: 6,
             aos: 'fade-right',
-            nombre: 'Fresas',
+            nombre: 'Vasija Terracota',
             precio: 456.50,
-            imagen: 'fresas.jpg',
+            imagen: './img/deco/decoV6.jpg',
+            des: 'decolor rojo'
+        },
+        {
+            id: 7,
+            aos: 'fade-right',
+            nombre: 'Jarron Chipre',
+            precio: 45158.00,
+            imagen: './img/deco/decoV10.jpg',
+            des: 'decolor rojo'
+        },
+        {
+            id: 8,
+            aos: 'fade-right',
+            nombre: 'Vasija Terracota',
+            precio: 456.50,
+            imagen: './img/deco/decoV9.jpg',
             des: 'decolor rojo'
         }
+
 
 
     ];
