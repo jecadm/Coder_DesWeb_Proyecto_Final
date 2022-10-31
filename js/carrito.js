@@ -71,11 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderizarProductos() {
         baseDeDatos.forEach((info) => {
             // Estructura
-            const miNodo = document.createElement('div');
+            const miNodo = document.createElement('article');
             miNodo.classList.add('card', 'col-sm-4');
             miNodo.setAttribute('data-aos', info.aos);
             // Body
-            const miNodoCardBody = document.createElement('div');
+            const miNodoCardBody = document.createElement('article');
             miNodoCardBody.classList.add('card-body');
             // Titulo
             const miNodoTitle = document.createElement('h4');
