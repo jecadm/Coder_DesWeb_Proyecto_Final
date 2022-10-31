@@ -32,6 +32,8 @@
   <title>PreEntrega2Costa-ETNIAS</title>
 
   <link rel="stylesheet" href="./sass/main.css">
+  <!-- constructor de carrito -->
+  <script src="./js/carrito.js"></script>
 </head>
 
 <body class="fondoG">
@@ -134,6 +136,27 @@
     </article>
   </section>
   <!-- Separador -->
+
+  <!-- carrito textil incio -->
+  <div class="container">
+    <div class="row">
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items" class="col-sm-8 row"></main>
+        <!-- Carrito -->
+        <aside class="col-sm-4">
+            <h2>Carrito</h2>
+            <!-- Elementos del carrito -->
+            <ul id="carrito" class="list-group"></ul>
+            <hr>
+            <!-- Precio total -->
+            <p class="text-right">Total: <span id="total"></span>&euro;</p>
+            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        </aside>
+    </div>
+</div>
+
+
+  <!-- carrito textil incio -->
   <!-- Imagen de section carrusel flayer-->
   <section data-aos="fade-up" class="container">
 
@@ -208,20 +231,17 @@
       <section class="row justify-content-center row-cols-4 mt-2 ">
         <!-- Tajeta 1  -->
         <article data-aos="fade-right" class="card col " style="width: 18rem;">
-          <img src="./img/IMG_20210310_160259-00.jpg" class="card-img-top mt-2" alt="img00">
+          <img src="./img/textil/alm1.jpg.crdownload" class="card-img-top mt-2" alt="img00">
           <section class="card-body">
-            <h5 class="card-title">Tetéra</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Almohadon popup</h5>
+            <p class="card-text">textura suave y confotable.</p>
           </section>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">Gris</li>
           </ul>
           <section class="card-body">
             <a href="#" class="card-link">Agregar al carrito</a>
-            <a href="#" class="card-link">Ver detalle</a>
+            <a href="./img/textil/alm1.jpg.crdownload" class="card-link">Ver detalle</a>
           </section>
         </article>
         <!-- Tajeta 2 -->
@@ -278,6 +298,42 @@
             <a href="#" class="card-link">Ver detalle</a>
           </section>
         </article>
+          <!-- Tajeta 5  -->
+          <article data-aos="fade-right" class="card col " style="width: 18rem;">
+            <img src="./img/IMG_20210310_160259-00.jpg" class="card-img-top mt-2" alt="img00">
+            <section class="card-body">
+              <h5 class="card-title">Tetéra</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </section>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <section class="card-body">
+              <a href="#" class="card-link">Agregar al carrito</a>
+              <a href="#" class="card-link">Ver detalle</a>
+            </section>
+          </article>  
+          <!-- Tajeta 6  -->
+          <article data-aos="fade-right" class="card col " style="width: 18rem;">
+            <img src="./img/IMG_20210310_160259-00.jpg" class="card-img-top mt-2" alt="img00">
+            <section class="card-body">
+              <h5 class="card-title">Tetéra</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </section>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+            <section class="card-body">
+              <a href="#" class="card-link">Agregar al carrito</a>
+              <a href="#" class="card-link">Ver detalle</a>
+            </section>
+          </article>
       </section>
     </section>
   </section>
