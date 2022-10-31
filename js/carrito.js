@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         baseDeDatos.forEach((info) => {
             // Estructura
             const miNodo = document.createElement('article');
-            miNodo.classList.add('card', 'col-sm-4' );
+            miNodo.classList.add('card', 'col' );
             miNodo.setAttribute('data-aos', info.aos);
             miNodo.setAttribute('style', 'width: 18rem;')
             // Body
