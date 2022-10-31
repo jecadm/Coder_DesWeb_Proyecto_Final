@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEO -->
   <meta name="description" content="Un lugar para hacer confortable tu espacio y tu vida">
-  <meta name="keywords" content="Velas , aromas, decoracion, hogar, casa, home">
+  <meta name="keywords" content="decoracion, hogar, casa, home">
   <!-- Boostrap5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -23,15 +23,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
 
+
   <!-- med -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
 
-  <title>ETNIAS & HOME</title>
+  <title>PreEntrega2Costa-ETNIAS</title>
 
   <link rel="stylesheet" href="./sass/main.css">
+  <!-- constructor de carrito -->
+  <script src="./js/carritofib.js"></script>
 </head>
 
 <body class="fondoG">
@@ -47,7 +50,7 @@
             </a>
           </section>
           <section class=" col-auto ">
-            <h2 class="tipografiaT "><strong>ETNIAS</strong> </h2>            
+            <h2 class="tipografiaT "><strong>ETNIAS</strong> </h2>
           </section>
 
           <!-- seccion derecha  - login y carrito -->
@@ -62,21 +65,49 @@
             </button>
 
             <ul class="dropdown-menu mr-4 textC1 ">
-              <li><a class="dropdown-item" href="#">LOGIN</a></li>
-              <li><a class="dropdown-item" href="#">Recuperar mi contraseña</a></li>
+              <li><a class="dropdown-item" href="./contactoDesdeLaWeb.html">LOGIN</a></li>
+              <li><a class="dropdown-item" href="./registro.html">Recuperar mi contraseña</a></li>
               <li><a class="dropdown-item" href="./registro.html">Registrarme</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Ayuda link</a></li>
+              <li><a class="dropdown-item" href="https://google.com">Ayuda link</a></li>
             </ul>
           </section>
-          <button type="button" class="btn  btn-dark textC1 mt-4 col"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-              height="20" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
-            </svg>
-          </button>
+          <!-- carrito deco incio -->
+          <section class=" mt-4 ">
+            <section class="container">
+              <section class="row">
+                <!-- Elementos generados a partir del JSON -->
+                <!-- Carrito -->
+                <aside class="col-sm-4  ">
+                  <button type="button" class="btn textC1 btn-dark  dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-bag-heart" viewBox="0 0 16 16">
+
+                      <path fill-rule="evenodd"
+                        d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+                    </svg><span class="visually-hidden "></span>
+                  </button>
+                  <button id="boton-vaciar" class="btn textC1 btn-dark visually-hidden ">
+
+                  </button>
+                  <ul class="dropdown-menu mr-4 textC1 position  top-5 end-0 ">
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group "></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <section>
+                      <p class="text-right">Total: <span id="total"></span>&euro;</p>
+                    </section>
+                  </ul>
+
+                </aside>
+              </section>
+            </section>
+          </section>
+          <!-- carrito deco fin-->
         </section>
 
       </section>
@@ -96,28 +127,28 @@
         <section class="collapse navbar-collapse " id="navbarTogglerDemo03">
           <ul class="navbar-nav me-auto sm-1 sm-lg-0">
             <li class="nav-item ">
-              <a class="nav-link fs-5 rotateScale" aria-current="page" href="./deco.html">Deco</a>
+              <a class="nav-link fs-5 rotateScale active" aria-current="page" href="./deco.html">Deco</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-5 rotateScale" href="./aromas.html">Textiles</a>
+              <a class="nav-link fs-5 rotateScale" href="./textiles.html">Textiles</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fs-5 rotateScale" href="./velas.html">Velas</a>
             </li>
-            </li>           
-            <li class="nav-item">
-              <a class="nav-link fs-5 rotateScale active" href="./fibras.html">Fibras Naturales</a>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link fs-5 rotateScale" href="./fibras.html">Fibras Naturales</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link fs-5 rotateScale" href="./contactoDesdeLaWeb.html">Contacto</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fs-5 rotateScale" href="#Contacto">Info</a>
             </li>
           </ul>
-          <form class="d-flex " role="search">
-            <input class=" form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success textC1" type="submit">Buscar</button>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success btn-dark textC1" type="submit">Buscar</button>
           </form>
         </section>
       </section>
@@ -134,67 +165,17 @@
     </article>
   </section>
   <!-- Separador -->
-  <!-- Imagen de section carrusel flayer-->
-  <section data-aos="fade-up" class="container">
 
-    <section id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
-      <section class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1">
-        </button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">
-        </button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">
-        </button>
-      </section>
-      <section class="carousel-inner">
-        <section class="carousel-item active">
-          <img src="./img/IMG_20210310_160259-01.jpg" class="d-block w-100 " alt="img1">
-          <section class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </section>
-        </section>
-        <section class="carousel-item">
-          <img src="./img/IMG_20210310_160259-00.jpg" class="d-block w-100" alt="img0">
-          <section class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </section>
-        </section>
-        <section class="carousel-item">
-          <img src="./img/IMG_20210310_160259-02.jpg" class="d-block w-100" alt="img2">
-          <section class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </section>
-        </section>
-      </section>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </section>
-
-  </section>
-  <!-- Imagen de section carrusel flayer-->
   <!-- Separador entre carrusel y tarj -->
   <section data-aos="flip-up" class="mt-2">
 
     <section class="card text-center">
       <article class="card-header  ">
-       <h1 class="txh1">Un lugar para hacer confortable tu espacio y tu vida. </h1>
+        <h1 class="txh1">Un lugar para hacer confortable tu espacio y tu vida. </h1>
       </article>
       <section class="card-body fondoG">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn textC1 btn-dark ">Go somewhere</a>
+        <h5 class="card-title ">PRODUCTOS DECORACIÓN</h5>
+
       </section>
       <section class="card-footer text-muted">
       </section>
@@ -202,82 +183,27 @@
 
   </section>
   <!-- Separador entre carrusel y tarj -->
+
+  <!-- carrito deco incio -->
+  <div class="">
+    <div class="container text-center">
+      <!-- Elementos generados a partir del JSON -->
+      <section id="itemsf" class="row row-cols-2 "></section>
+      <!-- Carrito se quito -->
+      <!-- carrito fin -->
+    </div>
+  </div>
+
+
+  <!-- carrito deco incio -->
+
+
   <!-- tarjetas con imagenes de productos 4 -->
   <section>
     <section class="container ">
-      <section class="row justify-content-center row-cols-4 mt-2 ">
-        <!-- Tajeta 1  -->
-        <article data-aos="fade-right" class="card col " style="width: 18rem;">
-          <img src="./img/IMG_20210310_160259-00.jpg" class="card-img-top mt-2" alt="img00">
-          <section class="card-body">
-            <h5 class="card-title">Tetéra</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </section>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-          </ul>
-          <section class="card-body">
-            <a href="#" class="card-link">Agregar al carrito</a>
-            <a href="#" class="card-link">Ver detalle</a>
-          </section>
-        </article>
-        <!-- Tajeta 2 -->
-        <article data-aos="flip-left" class="card col " style="width: 18rem;">
-          <img src="./img/IMG_20210310_160259-01.jpg" class="card-img-top mt-2" alt="img01">
-          <section class="card-body">
-            <h5 class="card-title">Bould T1</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </section>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-          </ul>
-          <section class="card-body">
-            <a href="#" class="card-link">Agregar al carrito</a>
-            <a href="#" class="card-link">Ver detalle</a>
-          </section>
-        </article>
-        <!-- tarjeta 3 -->
-        <article data-aos="flip-right" class="card col " style="width: 18rem;">
-          <img src="./img/IMG_20210310_160259-02.jpg" class="card-img-top mt-2" alt=".img02">
-          <section class="card-body">
-            <h5 class="card-title">Bould T2</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </section>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-          </ul>
-          <section class="card-body">
-            <a href="#" class="card-link">Agregar al carrito</a>
-            <a href="#" class="card-link">Ver detalle</a>
-          </section>
-        </article>
-        <!-- Tarjeta 4 -->
-        <article data-aos="fade-left" class="card col " style="width: 18rem;">
-          <img src="./img/IMG_20210310_160259-03.jpg" class="card-img-top mt-2" alt="img03">
-          <section class="card-body">
-            <h5 class="card-title">Bould T2</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </section>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-          </ul>
-          <section class="card-body">
-            <a href="#" class="card-link">Agregar al carrito</a>
-            <a href="#" class="card-link">Ver detalle</a>
-          </section>
-        </article>
+      <section class="row justify-content-center  mt-2 ">
+
+
       </section>
     </section>
   </section>
@@ -299,42 +225,42 @@
           <!-- pago 1 -->
           <section class="col " data-aos="fade-right" data-aos-offset="100" data-aos-duration="900"
             data-aos-easing="ease-in-sine">
-            <article class="rotatePago p-3 border border border-secondary bg-gradient border-2 "> <a>
-                <img cla src="./img/LOGOS/Logo-sin-nombre.png" alt="Logo" width="30" height="24"
-                  class="d-inline-block align-text-top ">
+            <article class="p-3 border border border-secondary bg-gradient border-2 "> <a>
+                <img cla src="./img/iconos/mpagoslogo.jpeg" alt="mercadopago" width="30" height="24"
+                  class="d-inline-block align-text-top mpagoImg ">
               </a>
             </article>
           </section>
           <!-- Pago 2 -->
           <section class="col tarjeta-aos" data-aos="flip-up" data-aos-offset="100" data-aos-duration="1600"
             data-aos-easing="ease-in-sine">
-            <article class="rotatePago  p-3 border border border-secondary bg-gradient border-2 ">
+            <article class="p-3 border border border-secondary bg-gradient border-2 ">
               <a>
-                <img src="./img/LOGOS/Logo-sin-nombre.png" alt="Logo" width="30" height="24"
-                  class="d-inline-block align-text-top">
+                <img src="./img/iconos/payoner.jpeg" alt="payonner" width="30" height="24"
+                  class="d-inline-block align-text-top mpagoImg">
               </a>
             </article>
           </section>
           <!-- Pago 3 -->
           <section class="col" data-aos="flip-up" data-aos-offset="100" data-aos-duration="1300"
             data-aos-easing="ease-in-sine">
-            <article class="rotatePago p-3 border border border-secondary bg-gradient border-2 "><a>
-                <img src="./img/LOGOS/Logo-sin-nombre.png" alt="Logo" width="30" height="24"
-                  class="d-inline-block align-text-top">
+            <article class="p-3 border border border-secondary bg-gradient border-2 "><a>
+                <img src="./img/iconos/paypal.png" alt="paypal" width="30" height="24"
+                  class="d-inline-block align-text-top ">
               </a></article>
           </section>
           <!-- Pago 4 -->
           <section class="col" data-aos="flip-up" data-aos-offset="100" data-aos-duration="1000"
             data-aos-easing="ease-in-sine">
-            <article class="rotatePago p-3 border border border-secondary bg-gradient border-2 "><a>
-                <img src="./img/LOGOS/Logo-sin-nombre.png" alt="Logo" width="30" height="24"
+            <article class="p-3 border border img-fluid border-secondary bg-gradient border-2 "><a>
+                <img src="./img/iconos/banco.jpg" alt="Logo" width="30" height="24"
                   class="d-inline-block align-text-top">
               </a></article>
           </section>
           <!-- Pago 5 -->
           <section class="col" data-aos="flip-up" data-aos-offset="100" data-aos-duration="900"
             data-aos-easing="ease-in-sine">
-            <article class="rotatePago p-3 border border border-secondary bg-gradient border-2 "><a>
+            <article class="p-3 border border border-secondary bg-gradient border-2 "><a>
                 <img src="./img/LOGOS/Logo-sin-nombre.png" alt="Logo" width="30" height="24"
                   class="d-inline-block align-text-top">
               </a></article>
@@ -411,7 +337,7 @@
 
       <!-- Copyright -->
       <div class="footer-copyright text-center py-3">© 2022 Copyright:
-        <a href="#"> <span>Jeronimo Costa</span>- Desarrollador web </a>
+        <a href="/"> <span>Jeronimo Costa</span>- Desarrollador web </a>
       </div>
       <!-- Copyright -->
 

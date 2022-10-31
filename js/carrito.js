@@ -2,11 +2,14 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // Variables
+
+
+    
     const baseDeDatos = [
         {
             id: 1,
             aos: 'fade-right',
-            nombre: 'Escalera deco Vali',
+            nombre: 'Escalera deco Bali',
             precio: 456.00,
             imagen: './img/deco/decoV1.jpg',
             des: 'decolor rojo'
@@ -73,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     let carrito = [];
-    const divisa = '$ Arg';
+    const divisa = ' Pesos Arg';
     const DOMitems = document.querySelector('#items');
     const DOMcarrito = document.querySelector('#carrito');
     const DOMtotal = document.querySelector('#total');
