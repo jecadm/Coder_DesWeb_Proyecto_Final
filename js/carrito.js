@@ -65,6 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Funciones
 
+    // funcion de evento
+    
+
+        function avisocarrito() {
+         alert ("Se agrego el producto al carrito");
+                }
     /**
     * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
     */
@@ -74,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const miNodo = document.createElement('article');
             miNodo.classList.add('card', 'col' );
             miNodo.setAttribute('data-aos', info.aos);
-            miNodo.setAttribute('style', 'width: 18rem;')
+            miNodo.setAttribute('style', 'width: 20rem;')
             // Body
             const miNodoCardBody = document.createElement('article');
             miNodoCardBody.classList.add('card-body');
@@ -100,6 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             miNodoBoton.textContent = 'Agregar';
             miNodoBoton.setAttribute('marcador', info.id);
             miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
+            miNodoBoton.addEventListener("click", avisocarrito);
             // Insertamos
             miNodoCardBody.appendChild(miNodoImagen);
             miNodoCardBody.appendChild(miNodoTitle);
@@ -154,6 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
             miBoton.style.marginLeft = '1rem';
             miBoton.dataset.item = item;
             miBoton.addEventListener('click', borrarItemCarrito);
+            
             // Mezclamos nodos
             miNodo.appendChild(miBoton);
             DOMcarrito.appendChild(miNodo);
