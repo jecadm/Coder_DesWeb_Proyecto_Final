@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             aos: 'flip-right',
             nombre: 'Calabacin',
             precio: 45188.00,
-            imagen: 'calabacin.jpg',
+            imagen: './img/textil/alm1.jpg.crdownload',
             des: 'decolor rojo'
         },
         {
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             aos: 'fade-left',
             nombre: 'Fresas',
             precio: 46877.52,
-            imagen: 'fresas.jpg',
+            imagen: './img/IMG_20210310_160259-01.jpg',
             des: 'decolor rojo'
         },
         {
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             aos: 'fade-right',
             nombre: 'Calabacin',
             precio: 45158.00,
-            imagen: 'calabacin.jpg',
+            imagen: './img/IMG_20210310_160259-02.jpg',
             des: 'decolor rojo'
         },
         {
@@ -72,8 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
         baseDeDatos.forEach((info) => {
             // Estructura
             const miNodo = document.createElement('article');
-            miNodo.classList.add('card', 'col-sm-4');
+            miNodo.classList.add('card', 'col-sm-4' );
             miNodo.setAttribute('data-aos', info.aos);
+            miNodo.setAttribute('style', 'width: 18rem;')
             // Body
             const miNodoCardBody = document.createElement('article');
             miNodoCardBody.classList.add('card-body');
@@ -148,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
             miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}${divisa}`;
             // Boton de borrar
             const miBoton = document.createElement('button');
-            miBoton.classList.add('btn', 'btn-danger', 'mx-5');
+            miBoton.classList.add('btn', 'textC1', 'mx-5', 'btn-dark');
             miBoton.textContent = 'X';
             miBoton.style.marginLeft = '1rem';
             miBoton.dataset.item = item;

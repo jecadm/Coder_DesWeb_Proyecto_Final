@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- SEO -->
-   <meta name="description" content="Un lugar para hacer confortable tu espacio y tu vida">
-   <meta name="keywords" content="Velas , aromas, decoracion, hogar, casa, home">
-   <!-- Boostrap5 -->
+  <!-- SEO -->
+  <meta name="description" content="Un lugar para hacer confortable tu espacio y tu vida">
+  <meta name="keywords" content="Velas , aromas, decoracion, hogar, casa, home">
+  <!-- Boostrap5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <!-- AOS para animaciones -->
@@ -73,12 +73,46 @@
               <li><a class="dropdown-item" href="#">Ayuda link</a></li>
             </ul>
           </section>
-          <button type="button" class="btn  btn-dark textC1 mt-4 col"><svg xmlns="http://www.w3.org/2000/svg" width="20"
-              height="20" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
-            </svg>
-          </button>
+          <section class=" mt-4 ">
+            <!-- carrito deco incio -->
+            <section class="container">
+              <section class="row">
+                <!-- Elementos generados a partir del JSON -->
+              <!-- Carrito -->
+                <aside class="col-sm-4">
+                  <button type="button" class="btn textC1 btn-dark  dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-bag-heart" viewBox="0 0 16 16">
+
+                      <path fill-rule="evenodd"
+                        d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+                    </svg><span class="visually-hidden "></span>
+                  </button>
+                  <button id="boton-vaciar" class="btn textC1 btn-dark visually-hidden ">
+
+                  </button>
+                  <ul class="dropdown-menu mr-4 textC1 ">
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <section>
+                      <p class="text-right">Total: <span id="total"></span>&euro;</p>
+                    </section>
+                  </ul>
+
+                </aside>
+              </section>
+            </section>
+
+          </section>
+
+          <!-- carrito deco fin-->
+
+
+
+
         </section>
 
       </section>
@@ -106,11 +140,11 @@
             <li class="nav-item">
               <a class="nav-link fs-5 rotateScale" href="./velas.html">Velas</a>
             </li>
-            </li>           
+            </li>
             <li class="nav-item">
               <a class="nav-link fs-5 rotateScale" href="./fibras.html">Fibras Naturales</a>
             </li>
-             <li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link fs-5 rotateScale" href="./contactoDesdeLaWeb.html">Contacto</a>
             </li>
             <li class="nav-item">
@@ -137,28 +171,9 @@
   </section>
   <!-- Separador -->
 
-  <!-- carrito deco incio -->
-  <div class="container">
-    <div class="row">
-        <!-- Elementos generados a partir del JSON -->
-     <!--    <main id="items" class="col-sm-8 row"></main> -->
-        <!-- Carrito -->
-        <aside class="col-sm-4">
-            <h2>Carrito</h2>
-            <!-- Elementos del carrito -->
-            <ul id="carrito" class="list-group"></ul>
-            <hr>
-            <!-- Precio total -->
-            <p class="text-right">Total: <span id="total"></span>&euro;</p>
-            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-        </aside>
-    </div>
-</div>
 
-
-  <!-- carrito deco incio -->
   <!-- Imagen de section carrusel flayer-->
- <!--  <section data-aos="fade-up" class="container">
+  <!--  <section data-aos="fade-up" class="container">
 
     <section id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
       <section class="carousel-indicators">
@@ -213,11 +228,10 @@
     <section class="card text-center">
       <article class="card-header  ">
         <h1 class="txh1">Un lugar para hacer confortable tu espacio y tu vida. </h1>
-        </article>
+      </article>
       <section class="card-body fondoG">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn textC1 btn-dark ">Go somewhere</a>
+        <h5 class="card-title ">PRODUCTOS</h5>
+      
       </section>
       <section class="card-footer text-muted">
       </section>
@@ -229,12 +243,12 @@
   <!-- carrito deco incio -->
   <div class="container">
     <div class="row">
-        <!-- Elementos generados a partir del JSON -->
-        <main id="items" class="col-sm-8 row"></main>
-        <!-- Carrito se quito -->
-        <!-- carrito fin -->
+      <!-- Elementos generados a partir del JSON -->
+      <main id="items" class="col-sm-8 row"></main>
+      <!-- Carrito se quito -->
+      <!-- carrito fin -->
     </div>
-</div>
+  </div>
 
 
   <!-- carrito deco incio -->
@@ -313,42 +327,42 @@
             <a href="#" class="card-link">Ver detalle</a>
           </section>
         </article>
-          <!-- Tajeta 5  -->
-          <article data-aos="fade-right" class="card col " style="width: 18rem;">
-            <img src="./img/IMG_20210310_160259-00.jpg" class="card-img-top mt-2" alt="img00">
-            <section class="card-body">
-              <h5 class="card-title">Tetéra</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </section>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-            </ul>
-            <section class="card-body">
-              <a href="#" class="card-link">Agregar al carrito</a>
-              <a href="#" class="card-link">Ver detalle</a>
-            </section>
-          </article>  
-          <!-- Tajeta 6  -->
-          <article data-aos="fade-right" class="card col " style="width: 18rem;">
-            <img src="./img/IMG_20210310_160259-00.jpg" class="card-img-top mt-2" alt="img00">
-            <section class="card-body">
-              <h5 class="card-title">Tetéra</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </section>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
-            </ul>
-            <section class="card-body">
-              <a href="#" class="card-link">Agregar al carrito</a>
-              <a href="#" class="card-link">Ver detalle</a>
-            </section>
-          </article>
+        <!-- Tajeta 5  -->
+        <article data-aos="fade-right" class="card col " style="width: 18rem;">
+          <img src="./img/IMG_20210310_160259-00.jpg" class="card-img-top mt-2" alt="img00">
+          <section class="card-body">
+            <h5 class="card-title">Tetéra</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </section>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <section class="card-body">
+            <a href="#" class="card-link">Agregar al carrito</a>
+            <a href="#" class="card-link">Ver detalle</a>
+          </section>
+        </article>
+        <!-- Tajeta 6  -->
+        <article data-aos="fade-right" class="card col " style="width: 18rem;">
+          <img src="./img/IMG_20210310_160259-00.jpg" class="card-img-top mt-2" alt="img00">
+          <section class="card-body">
+            <h5 class="card-title">Tetéra</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </section>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <section class="card-body">
+            <a href="#" class="card-link">Agregar al carrito</a>
+            <a href="#" class="card-link">Ver detalle</a>
+          </section>
+        </article>
       </section>
     </section>
   </section>
@@ -442,37 +456,37 @@
           <!-- Grid columna -->
           <section class="col-md-6 mt-md-0 mt-3">
 
-        <!-- informacion -->
-        <h5 class="text-uppercase">INFORMACIÓN Y CONTACTO</h5>
-        <p>Cualquier información que no encuentres en los links no dudes en contactanos</p>
-      </section> <!-- Grid columna -->
-      <hr class="clearfix w-100 d-md-none pb-3">
-      <!-- Grid columna -->
-      <section class="col-md-3 mb-md-0 mb-3">
-        <!-- Links -->
-        <h5 class="text-uppercase">Información</h5>
-        <ul class="list-unstyled">
-          <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Producción </div></a></li>
-          <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Dónde comprar</a> </li>
-          <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Calidad</a> </li>
-          <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Medio ambiente</a> </li>
-        </ul>
-      </section> <!-- Grid columna -->
-      <!-- Grid columna 2 -->
-      <section class="col-md-3 mb-md-0 mb-3">
-        <!-- Links -->
-        <h5 class="text-uppercase">Contacto</h5>
-        <ul class="list-unstyled">
-          <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="./contactoDesdeLaWeb.html">Contacto
-              desde la web</a> </li>
-          <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Ubicación</a> </li>
-          <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Socios</a> </li>
-          <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">341-5403540</a></li>
-          <li></li>
-        </ul>
+            <!-- informacion -->
+            <h5 class="text-uppercase">INFORMACIÓN Y CONTACTO</h5>
+            <p>Cualquier información que no encuentres en los links no dudes en contactanos</p>
+          </section> <!-- Grid columna -->
+          <hr class="clearfix w-100 d-md-none pb-3">
+          <!-- Grid columna -->
+          <section class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Información</h5>
+            <ul class="list-unstyled">
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Producción </div></a></li>
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Dónde comprar</a> </li>
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Calidad</a> </li>
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Medio ambiente</a> </li>
+            </ul>
+          </section> <!-- Grid columna -->
+          <!-- Grid columna 2 -->
+          <section class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Contacto</h5>
+            <ul class="list-unstyled">
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="./contactoDesdeLaWeb.html">Contacto
+                  desde la web</a> </li>
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Ubicación</a> </li>
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">Socios</a> </li>
+              <li> <a class="rotateMenu text-uppercase  btn textC1 btn-dark " href="#!">341-5403540</a></li>
+              <li></li>
+            </ul>
 
-      </section>
-      <!-- Grid column 2-->
+          </section>
+          <!-- Grid column 2-->
 
         </section>
         <!-- Grid row -->
