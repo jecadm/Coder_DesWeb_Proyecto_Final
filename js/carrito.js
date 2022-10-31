@@ -8,11 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
             aos: 'fade-right',
             nombre: 'Patata',
             precio: 1,
-            imagen: 'patata.jpg',
+            imagen: './img/IMG_20210310_160259-01.jpg',
             des: 'decolor rojo'
         },
         {
             id: 2,
+            aos: 'flip-left',
             nombre: 'Cebolla',
             precio: 1.2,
             imagen: 'cebolla.jpg',
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 3,
+            aos: 'flip-right',
             nombre: 'Calabacin',
             precio: 2.1,
             imagen: 'calabacin.jpg',
@@ -27,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 4,
+            aos: 'fade-left',
             nombre: 'Fresas',
             precio: 0.6,
             imagen: 'fresas.jpg',
@@ -34,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 5,
+            aos: 'fade-right',
             nombre: 'Calabacin',
             precio: 2.1,
             imagen: 'calabacin.jpg',
@@ -41,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 6,
+            aos: 'fade-right',
             nombre: 'Fresas',
             precio: 0.6,
             imagen: 'fresas.jpg',
@@ -73,8 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const miNodoCardBody = document.createElement('div');
             miNodoCardBody.classList.add('card-body');
             // Titulo
-            const miNodoTitle = document.createElement('h5');
-            miNodoTitle.classList.add('card-title');
+            const miNodoTitle = document.createElement('h4');
+            miNodoTitle.classList.add('card-title', 'text-center');
             miNodoTitle.textContent = info.nombre;
             // Imagen
             const miNodoImagen = document.createElement('img');
@@ -97,9 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Insertamos
             miNodoCardBody.appendChild(miNodoImagen);
             miNodoCardBody.appendChild(miNodoTitle);
-            miNodoCardBody.appendChild(miNodoPrecio);
-            miNodoCardBody.appendChild(miNodoBoton);
             miNodoCardBody.appendChild(miNodoDescript);
+            miNodoCardBody.appendChild(miNodoPrecio);
+            miNodoCardBody.appendChild(miNodoBoton);            
             miNodo.appendChild(miNodoCardBody);
             DOMitems.appendChild(miNodo);
         });
